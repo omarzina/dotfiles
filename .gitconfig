@@ -1,0 +1,16 @@
+[user]
+	name = Omar Zina
+	email = omarzina@gmail.com
+[core]
+	excludesfile = ~/.gitignore
+	editor = /usr/bin/vim
+[push]
+	default = matching
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	add = add .
+	add = add
+[pull]
+	rebase = true
