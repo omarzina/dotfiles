@@ -1,0 +1,2 @@
+// it's in public directory
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIvVXNlcnMvb21hci8uYXRvbS9wYWNrYWdlcy9yYWlscy10cmFuc3BvcnRlci9zcGVjL2ZpeHR1cmVzL3B1YmxpYy9ub19hc3NldF9waXBlbGluZS5qcyIsInNvdXJjZXNDb250ZW50IjpbXX0=
