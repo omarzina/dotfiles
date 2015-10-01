@@ -281,3 +281,29 @@ find . -type d -empty
 exiftool '-filename<CreateDate' -d %y%m%d_%H%M%S%%-c.%%le -r .
 exiftool '-Directory<CreateDate' -d ./%Y/%m/%d -r .
 exit
+. '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+docker run hello-world
+docker run docker/whalesay cowsay boo
+docker images
+mkdir mydockerbuild
+cd mydockerbuild/
+touch Dockerfile
+open -e Dockerfile
+ls
+l
+ls
+docker build -t docker-whale .
+docker images
+docker run docker-whale
+docker run docker-whale
+docker run docker-whale
+docker run docker-whale
+docker run docker-whale
+docker run docker-whale
+docker run docker-whale
+docker run docker-whale
+exit
+. '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+exit
+. '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+exit

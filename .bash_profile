@@ -31,4 +31,8 @@ alias la='ls -lah'           #  Show hidden files.
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+export PATH="/usr/local/bin:$PATH"
+export JBOSS_HOME=/usr/local/opt/wildfly-as
+export PATH=${PATH}:${JBOSS_HOME}/bin
 source ~/.profile
+

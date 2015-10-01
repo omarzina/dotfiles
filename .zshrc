@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git rails rake ruby brew) 
 
 # User configuration
 
@@ -78,6 +78,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias gacm='gaa && gc -m '
+alias rakem='rake db:migrate'
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+export PATH="/usr/local/bin:$PATH"
+export JBOSS_HOME=/usr/local/opt/wildfly-as
+export PATH=${PATH}:${JBOSS_HOME}/bin

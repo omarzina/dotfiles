@@ -8,57 +8,64 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/forma de
+~MSle0~/remove
 
 # Last Substitute Search Pattern:
-~MSle0&xxx
+~MSle0&quantity
 
 # Last Substitute String:
-$456
+$
 
 # Command Line History (newest to oldest):
-:qa
-:q
-:wqa
-:so %
-:vs ~/.vimrc
 :w
-:b app/reports/budget_report.rb
+:source ~/.vimrc
+:source %
+:e ~/.vimrc
+:NERDTreeFind
+:q
+:q!
+:wq
+:qa
 :buffers
 :b
-:NERDTreeFind
+:map
+:help index.txt
+:b 1
+:jumps
+:A
 :Q
-:vs 
-:e ~/.vimrc
-:vs
-:Vs
-:W
-:q!
-:!
-:b 7
-:buffer
+:Ag validate
+:set cursorline
+:split ~/.vimrc
+:s/quantity/weight
+:Ag numericality
+:help edit
 
 # Search String History (newest to oldest):
-?/forma de
-?/new
-?/3
-?/de acuer
-?/de ac
-?/garan
-? write_budget_model_plague_group
+?/remove
+? \Vdef\%#
+?/stoc
+?/homebre
+?/nnore
+?/nnorem
+?/noh
+? \Vtest\%#
+? \Vass\%#
+?/cursorlin
+? quantity
+?/asdfa
+?/s/quantity/weight
+?/qerweb
+? \<save\>
+?/split
+?/substi
+? old
+?/errroor
+?/nu
+?/numbe
+?/stock
+? @$
 ?/alias
-? xxx
-?/s/xxx/456/g
-? thee
-?/set
-? \<before\>
-?/,,
-?/NERD
-?/date
-?/year
-?/  asdwergwe
-?/client.cre
-?/foldme
 
 # Expression History (newest to oldest):
 
@@ -67,168 +74,159 @@ $456
 # Input Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	      write_page do write_third_page(budget) end
-"1	LINE	0
-	      write_page do write_third_page(budget) end
+"0	CHAR	0
+	rails g model StockTrace purchase_stock_transaction_id:integer order_stock_transaction_id:integer
+""1	LINE	0
+	  has_many :stock_transactions # this relationship only goes from order referencing purchases
 "2	LINE	0
-	      write_page do write_second_page(budget) end
+	rails g model StockTrace purchase_stock_transaction_id:integer order_stock_transaction_id:integer
 "3	LINE	0
-	        unless bmpg.total?
+	rails g migration AddRemainingQuantityToStockTransaction remaining_quantity:decimal{10.2}
 "4	LINE	0
-	   #start_new_page
+	ssssssssssssssssssssssssssdd
 "5	LINE	0
-	   #image "app/assets/images/budget_report_footer.jpg", :width => 520, :at => [0, 110]
+	  validates_presence_of :date, :customer, :order_line 
 "6	LINE	0
-	   #move_down 140
+	    assert o.save, "did not saved valid order"
 "7	LINE	0
-	   #image "app/assets/images/budget_report_header.jpg", :width => 520, :at => [0, bounds.top]
-"8	LINE	0
-	      text "<color rgb='365F91'>Teléfono: (598) 2900 2120</color>", :font => :Helvetica, :size => 12, :align => :right, :inline_format => true, :style => :bold
-"9	LINE	0
 	
+"8	LINE	0
+	  
+"9	LINE	0
+	    ol.quantity = 20
+"k	CHAR	0
+	jj
 "-	CHAR	0
-	false
+	:
 
 # File marks:
-'0  8  0  ~/Documents/Google Drive/cabinet/omar
-'1  49  5  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
-'2  91  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
-'3  71  143  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
-'4  1  13  ~/workspace/omarzina/dotfiles/.git/COMMIT_EDITMSG
-'5  184  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
-'6  17  2  ~/.bash_profile
-'7  72  0  ~/.zshrc
-'8  40  0  ~/NERD_tree_1
-'9  4  0  ~/workspace/rorcat/NERD_tree_1
+'0  4  23  ~/workspace/opercor/opercat/app/models/stock_transaction.rb
+'1  80  0  ~/.vimrc
+'2  1  0  ~/workspace/opercor/opercat/README.md
+'3  1  4  ~/workspace/opercor/opercat/NERD_tree_1
+'4  1  0  ~/workspace/opercor/opercat/.git/COMMIT_EDITMSG
+'5  1  4  ~/workspace/opercor/opercat/NERD_tree_1
+'6  4  25  ~/workspace/opercor/opercat/app/models/order_line.rb
+'7  81  0  ~/.vimrc
+'8  33  0  ~/workspace/opercor/opercat/test/models/order_test.rb
+'9  794  7  ~/workspace/opercor/opercat/NERD_tree_1
 
 # Jumplist (newest first):
--'  8  0  ~/Documents/Google Drive/cabinet/omar
--'  1  0  ~/Documents/Google Drive/cabinet/omar
--'  49  5  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  1  0  ~/workspace/xinamon/ihouse/NERD_tree_1
--'  22  2  ~/workspace/xinamon/ihouse/NERD_tree_1
--'  91  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  54  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  43  32  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  58  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  50  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  46  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  36  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  32  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  27  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  23  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  19  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  17  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  14  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  11  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  9  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  5  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  3  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  2  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  64  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  75  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  62  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  47  6  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  165  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  163  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  152  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  150  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  144  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  142  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  136  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  134  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  132  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  130  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  122  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  120  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  112  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  109  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  105  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  102  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  92  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  83  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  81  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  74  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  70  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  66  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  96  6  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  97  10  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  177  6  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  173  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  197  6  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  198  6  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  71  118  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  67  66  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  210  38  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  204  38  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  199  29  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  4  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  44  6  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  39  8  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  43  2  ~/workspace/xinamon/ihouse/NERD_tree_1
--'  72  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  107  6  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  108  3  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  106  70  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  181  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  88  5  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  110  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  2  2  ~/workspace/xinamon/ihouse/app/views/budget_work_steps/index.json.jbuilder
--'  186  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  1  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  1  0  ~/workspace/xinamon/ihouse/app/views/budget_work_steps/index.json.jbuilder
--'  1  13  ~/workspace/omarzina/dotfiles/.git/COMMIT_EDITMSG
--'  184  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  63  0  ~/.zshrc
+-'  4  23  ~/workspace/opercor/opercat/app/models/stock_transaction.rb
+-'  32  0  ~/workspace/opercor/opercat/comandos.txt
+-'  1  1  ~/workspace/opercor/opercat/NERD_tree_1
+-'  1  0  ~/workspace/opercor/opercat/comandos.txt
+-'  80  0  ~/.vimrc
+-'  34  0  ~/workspace/opercor/opercat/comandos.txt
+-'  30  0  ~/workspace/opercor/opercat/comandos.txt
+-'  11  0  ~/workspace/opercor/opercat/README.md
+-'  16  0  ~/workspace/opercor/opercat/test/models/stock_transaction_test.rb
+-'  5  0  ~/workspace/opercor/opercat/test/models/stock_test.rb
+-'  6  0  ~/workspace/opercor/opercat/app/models/stock_transaction.rb
+-'  1  0  ~/workspace/opercor/opercat/README.md
+-'  1  0  ~/workspace/opercor/opercat/.git/COMMIT_EDITMSG
+-'  2  0  ~/workspace/opercor/opercat/.git/COMMIT_EDITMSG
+-'  635  2  ~/workspace/opercor/opercat/NERD_tree_1
+-'  1  0  ~/.vimrc
+-'  4  25  ~/workspace/opercor/opercat/app/models/order_line.rb
+-'  6  4  ~/workspace/opercor/opercat/test/models/order_line_test.rb
+-'  6  2  ~/workspace/opercor/opercat/app/models/order_line.rb
+-'  4  18  ~/workspace/opercor/opercat/app/models/check.rb
+-'  1  0  ~/workspace/opercor/opercat/test/models/order_line_test.rb
+-'  17  22  ~/workspace/opercor/opercat/test/models/order_test.rb
+-'  6  7  ~/workspace/opercor/opercat/test/models/order_test.rb
+-'  19  3  ~/workspace/opercor/opercat/test/models/order_test.rb
+-'  1  0  ~/workspace/opercor/opercat/test/models/address_test.rb
+-'  12  36  ~/workspace/opercor/opercat/test/models/order_test.rb
+-'  15  6  ~/workspace/opercor/opercat/test/models/order_test.rb
+-'  9  6  ~/workspace/opercor/opercat/test/models/order_test.rb
+-'  4  6  ~/workspace/opercor/opercat/test/models/order_test.rb
+-'  1  0  ~/workspace/opercor/opercat/test/models/order_test.rb
+-'  81  0  ~/.vimrc
+-'  64  20  ~/.vimrc
+-'  82  0  ~/.vimrc
+-'  92  0  ~/.vimrc
+-'  19  7  ~/.vimrc
+-'  67  0  ~/.vimrc
+-'  66  0  ~/.vimrc
+-'  62  16  ~/.vimrc
+-'  60  0  ~/.vimrc
+-'  59  0  ~/.vimrc
+-'  51  0  ~/.vimrc
+-'  48  0  ~/.vimrc
+-'  44  17  ~/.vimrc
+-'  47  0  ~/.vimrc
+-'  43  0  ~/.vimrc
+-'  42  0  ~/.vimrc
+-'  37  0  ~/.vimrc
+-'  32  0  ~/.vimrc
+-'  14  0  ~/.vimrc
+-'  33  0  ~/workspace/opercor/opercat/test/models/order_test.rb
+-'  17  0  ~/.vimrc
+-'  16  0  ~/.vimrc
+-'  1  0  ~/workspace/opercor/opercat/.vimrc
+-'  4  0  ~/workspace/opercor/opercat/app/controllers/application_controller.rb
+-'  5  1  ~/workspace/opercor/opercat/app/controllers/application_controller.rb
+-'  794  7  ~/workspace/opercor/opercat/NERD_tree_1
+-'  832  4  ~/workspace/opercor/opercat/NERD_tree_1
+-'  29  1  ~/.vimrc
+-'  30  20  ~/.vimrc
+-'  28  0  ~/.vimrc
+-'  13  0  ~/.vimrc
+-'  24  40  ~/.vimrc
+-'  12  7  ~/.vimrc
+-'  11  7  ~/.vimrc
+-'  16  0  ~/[Vundle] Installer
+-'  10  25  ~/.vimrc
+-'  23  0  ~/.vimrc
+-'  1  0  ~/Downloads/opercat_prod-10-Sep-2015.sql
+-'  954  0  ~/Downloads/opercat_prod-14-Feb-2015.sql
+-'  622  31  ~/Downloads/opercat_prod-14-Feb-2015.sql
+-'  589  0  ~/Downloads/opercat_prod-14-Feb-2015.sql
+-'  1  0  ~/Downloads/opercat_prod-14-Feb-2015.sql
+-'  6  0  ~/.ssh/known_hosts
+-'  1  0  ~/.ssh/known_hosts
+-'  9  23  ~/.vimrc
+-'  82  28  ~/.zshrc
 -'  1  0  ~/.zshrc
--'  1  0  ~/.gitconfig
--'  1  0  ~/.gitrc
--'  1  18  ~/workspace/xinamon/ihouse/.git/COMMIT_EDITMSG
--'  76  143  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  77  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  113  6  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  114  3  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  194  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  93  5  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  116  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  2  2  ~/workspace/xinamon/ihouse/app/views/budget_work_steps/index.json.jbuilder
--'  1  0  ~/workspace/xinamon/ihouse/app/views/budget_work_steps/index.json.jbuilder
--'  1  13  ~/workspace/omarzina/dotfiles/.git/COMMIT_EDITMSG
--'  149  81  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  49  5  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  1  0  ~/workspace/xinamon/ihouse/NERD_tree_1
--'  22  2  ~/workspace/xinamon/ihouse/NERD_tree_1
--'  91  4  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  54  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  43  32  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
--'  58  0  ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
+-'  81  25  ~/.zshrc
+-'  62  0  ~/.zshrc-e
+-'  1  0  ~/.zshrc-e
+-'  8  0  ~/.oh-my-zsh
+-'  1  0  ~/.oh-my-zsh
+-'  83  0  ~/.zshrc
+-'  1  0  ~/.oh-my-zsh/oh-my-zsh.sh
+-'  82  0  ~/.oh-my-zsh/templates/zshrc.zsh-template
+-'  1  0  ~/.oh-my-zsh/templates/zshrc.zsh-template
+-'  4  25  ~/workspace/opercor/opercat/app/models/order_line.rb
+-'  6  4  ~/workspace/opercor/opercat/test/models/order_line_test.rb
+-'  6  2  ~/workspace/opercor/opercat/app/models/order_line.rb
+-'  4  18  ~/workspace/opercor/opercat/app/models/check.rb
+-'  1  0  ~/workspace/opercor/opercat/test/models/order_line_test.rb
+-'  17  22  ~/workspace/opercor/opercat/test/models/order_test.rb
+-'  6  7  ~/workspace/opercor/opercat/test/models/order_test.rb
+-'  19  3  ~/workspace/opercor/opercat/test/models/order_test.rb
+-'  1  0  ~/workspace/opercor/opercat/test/models/address_test.rb
 
 # History of marks within files (newest to oldest):
 
-> ~/Documents/Google Drive/cabinet/omar
-	"	8	0
+> ~/workspace/opercor/opercat/comandos.txt
+	"	32	0
+	^	35	0
+	.	32	0
+	+	36	91
+	+	36	89
+	+	35	0
+	+	36	0
+	+	30	0
+	+	31	72
+	+	33	0
+	+	35	97
+	+	35	0
+	+	32	0
 
-> ~/Documents/Google Drive/cabinet/NERD_tree_1
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/workspace/xinamon/ihouse/NERD_tree_1
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/workspace/xinamon/ihouse/NERD_tree_2
-	"	4	0
+> ~/workspace/opercor/opercat/NERD_tree_1
+	"	4	1
 	.	1	0
 	+	1	0
 	+	1	0
@@ -245,9 +243,94 @@ $456
 	+	1	0
 	+	1	0
 	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
 
-> ~/workspace/xinamon/ihouse/ControlP
-	"	9	0
+> ~/workspace/opercor/opercat/ControlP
+	"	10	0
 	.	2	0
 	+	1	0
 	+	1	0
@@ -350,1051 +433,597 @@ $456
 	+	1	0
 	+	2	0
 
-> ~/workspace/xinamon/ihouse/app/reports/budget_report.rb
-	"	49	5
-	^	98	6
-	.	98	6
-	+	59	4
-	+	59	109
-	+	59	0
-	+	59	29
-	+	59	4
-	+	59	76
-	+	73	24
-	+	4	0
-	+	121	24
-	+	142	0
-	+	142	0
-	+	142	4
-	+	142	35
-	+	142	182
-	+	142	31
-	+	142	31
-	+	142	31
-	+	142	187
-	+	142	0
-	+	142	82
-	+	59	0
-	+	143	0
-	+	181	0
-	+	71	140
+> ~/.vimrc
+	"	80	0
+	^	80	3
+	.	80	0
+	+	9	1
+	+	10	1
+	+	10	1
+	+	10	1
+	+	10	1
+	+	10	1
+	+	9	22
+	+	10	0
+	+	9	0
+	+	13	41
+	+	10	1
+	+	11	0
+	+	10	8
+	+	11	20
+	+	24	0
+	+	7	0
+	+	13	0
+	+	12	1
+	+	13	0
+	+	13	40
+	+	13	0
+	+	28	0
+	+	29	1
+	+	24	0
+	+	29	18
+	+	14	0
+	+	14	0
+	+	19	1
+	+	18	0
+	+	18	0
+	+	17	0
+	+	16	0
+	+	17	0
+	+	14	0
+	+	19	0
+	+	14	1
+	+	16	0
+	+	17	0
+	+	18	1
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	32	0
+	+	37	0
+	+	45	0
+	+	44	18
+	+	48	0
+	+	48	0
+	+	56	0
+	+	60	0
+	+	64	0
+	+	67	0
 	+	71	0
-	+	71	0
-	+	106	137
-	+	110	0
-	+	106	71
-	+	110	0
-	+	106	0
-	+	109	0
-	+	71	0
-	+	71	141
-	+	71	0
-	+	71	124
-	+	71	8
-	+	71	122
-	+	71	0
-	+	71	143
+	+	20	0
+	+	81	0
+	+	92	0
+	+	81	20
+	+	92	0
+	+	81	0
+	+	84	48
+	+	81	21
+	+	84	0
+	+	84	0
+	+	84	0
+	+	81	0
+	+	81	0
+	+	91	0
+	+	87	20
+	+	40	0
+	+	38	0
+	+	39	0
+	+	38	0
+	+	39	0
+	+	90	0
+	+	88	1
 	+	88	0
-	+	117	0
+	+	89	30
+	+	86	0
+	+	75	0
+	+	82	0
+	+	82	0
+	+	81	20
+	+	82	0
+	+	83	32
+	+	84	32
+	+	81	0
+	+	82	0
+	+	82	0
+	+	81	20
+	+	40	0
+	+	82	0
+	+	83	0
+	+	84	0
+	+	80	0
+
+> ~/workspace/opercor/opercat/README.md
+	"	1	0
+	^	11	174
+	.	11	0
+	+	11	174
+	+	11	0
+
+> ~/workspace/opercor/opercat/test/models/stock_test.rb
+	"	5	0
+
+> ~/workspace/opercor/opercat/app/models/stock_transaction.rb
+	"	4	23
+	^	4	24
+	.	5	0
+	+	6	2
+	+	6	0
+	+	6	0
+	+	6	0
+	+	5	0
+	+	5	0
+
+> ~/workspace/opercor/opercat/.git/COMMIT_EDITMSG
+	"	1	0
+	^	1	20
+	.	1	19
+	+	2	14
+	+	4	0
+	+	2	0
+	+	3	0
+	+	2	54
+	+	1	19
+	i	2	0
+
+> ~/workspace/opercor/opercat/app/models/stock.rb
+	"	1	0
+
+> ~/workspace/opercor/opercat/db/schema.rb
+	"	188	1
+
+> ~/workspace/opercor/opercat/test/models/stock_transaction_test.rb
+	"	14	1
+	^	13	2
+	.	13	2
+	+	4	18
+	+	15	1
+	+	4	2
+	+	5	2
+	+	6	31
+	+	7	61
+	+	13	2
+
+> ~/workspace/opercor/opercat/db/migrate/20150919034242_remove_purchase_stock_transaction_from_stock_transaction.rb
+	"	3	0
+
+> ~/workspace/opercor/opercat/db/migrate/20150924022204_remove_purchase_stock_transaction_from_stock_transaction_again.rb
+	"	3	36
+	^	3	37
+	.	3	36
+	+	3	36
+
+> ~/apps.txt
+	"	623	6
+
+> /usr/local/Cellar/macvim/7.4-76/MacVim.app/Contents/Resources/vim/runtime/doc/index.txt
+	"	36	0
+
+> ~/workspace/opercor/opercat/test/models/order_test.rb
+	"	29	30
+	^	29	31
+	.	29	30
+	+	33	0
+	+	3	41
+	+	33	0
+	+	33	0
+	+	33	0
+	+	33	0
+	+	33	0
+	+	33	0
+	+	34	0
+	+	33	5
+	+	33	0
+	+	33	0
+	+	33	0
+	+	4	0
+	+	5	0
+	+	4	15
+	+	5	0
+	+	4	41
+	+	7	0
+	+	5	17
+	+	6	47
+	+	9	0
+	+	10	0
+	+	12	52
+	+	8	0
+	+	15	0
+	+	16	0
+	+	15	50
+	+	16	4
+	+	18	32
+	+	19	36
+	+	19	0
+	+	19	10
+	+	20	46
+	+	19	24
+	+	19	24
+	+	6	0
+	+	22	0
+	+	23	0
+	+	26	4
+	+	20	0
+	+	15	18
+	+	26	55
+	+	26	0
+	+	31	12
+	+	30	16
+	+	27	0
+	+	30	20
+	+	31	0
+	+	30	21
+	+	27	26
+	+	29	30
+
+> ~/.vim/bundle/vim-rails/doc/rails.txt
+	"	121	0
+
+> ~/workspace/opercor/opercat/app/models/order.rb
+	"	6	3
+	.	5	0
+	+	6	0
+	+	8	0
+	+	6	29
+	+	7	0
+	+	6	36
+	+	7	0
+	+	6	33
+	+	7	0
+	+	4	22
+	+	6	0
+	+	5	0
+
+> /usr/local/Cellar/macvim/7.4-76/MacVim.app/Contents/Resources/vim/runtime/doc/help.txt
+	"	37	1
+
+> /usr/local/Cellar/macvim/7.4-76/MacVim.app/Contents/Resources/vim/runtime/doc/quickref.txt
+	"	32	0
+
+> ~/workspace/opercor/opercat/test/models/address_test.rb
+	"	1	0
+
+> ~/workspace/opercor/opercat/app/models/address.rb
+	"	3	2
+
+> ~/workspace/opercor/opercat/test/models/order_line_test.rb
+	"	1	0
+	^	44	50
+	.	44	49
+	+	46	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	6	0
+	+	7	0
+	+	6	55
+	+	9	0
+	+	10	0
+	+	12	56
+	+	11	26
+	+	14	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	20	5
+	+	15	48
+	+	22	0
+	+	22	0
+	+	20	0
+	+	22	0
+	+	19	0
+	+	21	48
+	+	22	0
+	+	24	0
+	+	25	0
+	+	24	56
+	+	15	4
+	+	16	0
+	+	15	18
+	+	25	4
+	+	28	20
+	+	29	0
+	+	30	0
+	+	29	0
+	+	30	0
+	+	31	0
+	+	32	0
+	+	34	0
+	+	35	0
+	+	34	60
+	+	35	4
+	+	42	15
+	+	45	0
+	+	44	32
+	+	43	22
+	+	44	49
+
+> ~/workspace/opercor/opercat/app/models/order_line.rb
+	"	4	25
+	^	5	35
+	.	5	34
+	+	4	0
+	+	5	34
+
+> ~/workspace/opercor/opercat/__InputList__
+	"	1	1
+	.	1	1
+	+	4	0
+	+	4	0
+	+	1	1
+
+> /usr/local/Cellar/macvim/7.4-76/MacVim.app/Contents/Resources/vim/runtime/doc/editing.txt
+	"	1366	41
+
+> ~/workspace/opercor/opercat/app/models/check.rb
+	"	4	21
+
+> ~/workspace/opercor/opercat/test/fixtures/order_lines.yml
+	"	5	0
+
+> ~/workspace/opercor/opercat/test/models/bank_test.rb
+	"	1	0
+
+> ~/workspace/opercor/opercat/test/models/check_test.rb
+	"	1	0
+
+> ~/workspace/opercor/opercat/test/models/customer_test.rb
+	"	1	0
+
+> ~/workspace/opercor/opercat/test/models/person_test.rb
+	"	1	0
+
+> ~/workspace/opercor/opercat/test/models/product_price_test.rb
+	"	1	0
+
+> ~/workspace/opercor/opercat/test/models/product_test.rb
+	"	1	0
+
+> ~/workspace/opercor/opercat/test/models/purchase_line_test.rb
+	"	1	0
+
+> ~/workspace/opercor/opercat/test/models/provider_test.rb
+	"	1	0
+
+> ~/.ssh/known_hosts
+	"	1	0
+	.	6	0
+	+	14	0
+	+	6	0
+
+> /private/var/folders/4_/903325qj43scvdkdbzbtnms40000gn/T/tutorza3K1X
+	"	970	35
+	^	777	36
+	.	777	35
+	+	222	47
+	+	316	0
+	+	321	0
+	+	315	0
+	+	353	0
+	+	361	0
+	+	350	10
+	+	351	10
+	+	352	0
+	+	374	1
+	+	386	0
+	+	388	0
+	+	387	0
+	+	387	0
+	+	385	0
+	+	431	60
+	+	456	56
+	+	431	0
+	+	675	0
+	+	777	35
+
+> /usr/local/Cellar/vim/7.4.712/share/vim/vim74/doc/windows.txt
+	"	96	0
+
+> ~/workspace/opercor/opercat/[Vundle] Installer
+	"	15	0
+	.	1	0
+	+	75	0
+	+	67	0
+	+	58	0
+	+	49	0
+	+	37	0
+	+	28	0
+	+	15	0
+	+	1	0
+
+> ~/workspace/opercor/opercat/app/controllers/application_controller.rb
+	"	4	0
+	.	5	0
+	+	5	0
+
+> ~/workspace/opercor/opercat/.vimrc
+	"	1	0
+
+> ~/workspace/opercor/opercat/test/controllers/banks_controller_test.rb
+	"	6	0
+	.	7	0
+	+	7	0
+	+	7	0
+
+> /usr/local/Cellar/macvim/7.4-76/MacVim.app/Contents/Resources/vim/runtime/doc/pi_netrw.txt
+	"	353	20
+
+> ~/[Vundle] Installer
+	"	7	0
+	.	1	0
+	+	69	0
+	+	66	0
+	+	63	0
+	+	60	0
+	+	56	0
+	+	52	0
+	+	48	0
 	+	44	0
-	+	55	0
-	+	161	0
-	+	173	0
-	+	173	0
-	+	178	0
-	+	179	0
-	+	96	0
-	+	40	8
-	+	44	11
-	+	40	33
-	+	43	0
-	+	44	0
-	+	41	0
-	+	42	7
-	+	41	7
-	+	44	0
-	+	39	4
-	+	43	4
-	+	98	6
-	m	67	99
+	+	40	0
+	+	36	0
+	+	32	0
+	+	28	0
+	+	24	0
+	+	20	0
+	+	16	0
+	+	12	0
+	+	7	0
+	+	1	0
+
+> /private/var/folders/4_/903325qj43scvdkdbzbtnms40000gn/T/vWcZq5D/8
+	"	1	0
+
+> ~/[Vundle] list
+	"	2	0
+	.	1	0
+	+	9	0
+	+	7	0
+	+	4	0
+	+	1	0
+
+> ~/[Vundle] clean
+	"	1	0
+	.	1	0
+	+	3	0
+	+	2	0
+	+	1	0
+
+> ~/Downloads/opercat_prod-10-Sep-2015.sql
+	"	1	0
+
+> ~/Downloads/opercat_prod-14-Feb-2015.sql
+	"	954	0
 
 > ~/.zshrc
-	"	63	0
-	^	52	19
-	.	52	18
-	+	53	49
-	+	52	18
+	"	82	28
+	^	82	29
+	.	82	27
+	+	87	35
+	+	87	34
+	+	89	36
+	+	81	24
+	+	82	27
 
-> ~/NERD_tree_1
+> ~/.zshrc-e
+	"	62	0
+
+> ~/.oh-my-zsh/oh-my-zsh.sh
+	"	1	0
+
+> ~/.oh-my-zsh/templates/zshrc.zsh-template
+	"	82	0
+
+> ~/workspace/opercor/opercat/.git/MERGE_MSG
+	"	1	0
+
+> ~/workspace/sandbox/scalaAntel/build.sbt
 	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
+	^	4	0
+	.	4	0
+	+	3	0
+	+	4	0
 
-> ~/.gitconfig
-	"	1	0
+> ~/workspace/sandbox/scalaAntel/hello.scala
+	"	2	24
+	^	2	22
+	.	2	21
+	+	1	0
+	+	2	21
 
-> ~/.gitrc
-	"	1	0
-
-> ~/workspace/xinamon/ihouse/.git/COMMIT_EDITMSG
-	"	1	18
-	^	1	19
-	.	1	18
-	+	1	18
-
-> ~/workspace/xinamon/ihouse/app/views/budget_work_steps/index.json.jbuilder
-	"	2	2
-
-> ~/workspace/omarzina/dotfiles/.git/COMMIT_EDITMSG
+> ~/workspace/omarzina/opercat/.git/COMMIT_EDITMSG
 	"	1	13
 	^	1	14
 	.	1	13
 	+	1	13
 
-> ~/.vimrc
-	"	118	0
-	.	118	0
-	+	56	9
-	+	58	40
-	+	60	14
-	+	60	15
-	+	123	0
-	+	65	21
-	+	64	0
-	+	65	0
-	+	66	5
-	+	69	11
-	+	68	19
-	+	70	15
-	+	72	8
-	+	71	0
-	+	72	0
-	+	71	0
-	+	72	9
-	+	123	0
-	+	123	0
-	+	75	22
-	+	123	0
-	+	76	0
-	+	75	0
-	+	87	32
-	+	87	32
-	+	98	0
-	+	100	0
-	+	102	9
-	+	6	25
-	+	102	0
-	+	102	10
-	+	103	0
-	+	102	21
-	+	39	1
-	+	40	1
-	+	102	1
-	+	99	9
-	+	102	12
-	+	102	0
-	+	99	0
-	+	99	0
-	+	107	0
-	+	69	0
-	+	70	0
-	+	60	0
-	+	69	0
-	+	70	0
-	+	71	0
-	+	72	0
-	+	78	0
-	+	79	0
-	+	80	0
-	+	96	0
-	+	97	0
-	+	99	2
-	+	60	0
-	+	58	0
-	+	1	51
-	+	2	53
-	+	1	2
-	+	99	0
-	+	93	25
-	+	90	0
-	+	89	59
-	+	111	0
-	+	110	0
-	+	89	13
-	+	89	35
-	+	114	0
-	+	115	0
-	+	116	0
-	+	123	21
-	+	123	0
-	+	123	0
-	+	123	0
-	+	120	47
-	+	121	0
-	+	123	0
-	+	123	0
-	+	123	0
-	+	123	0
-	+	122	0
-	+	118	21
-	+	118	0
-
-> /private/var/folders/4_/903325qj43scvdkdbzbtnms40000gn/T/tutormVe5TJ
-	"	946	2
-
-> ~/workspace/omarzina/dotfiles/NERD_tree_1
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/workspace/xinamon/ihouse/config/application.yml
-	"	11	34
-
-> ~/workspace/xinamon/ihouse/public/reports/pdf_test
-	"	4	0
-
-> ~/workspace/xinamon/ihouse/app/models/address.rb
-	"	13	3
-	.	2	0
-	+	2	0
-
-> ~/workspace/xinamon/ihouse/config/locales/es.yml
-	"	36	6
-
-> /private/var/folders/4_/903325qj43scvdkdbzbtnms40000gn/T/tutorEBnVel
-	"	407	0
-	^	132	46
-	.	407	0
-	+	132	45
-	+	407	0
-
-> ~/.bash_profile
-	"	17	2
-	^	34	17
-	.	34	0
-	+	2	0
-	+	2	38
-	+	30	48
-	+	27	7
-	+	18	0
-	+	21	0
-	+	22	0
-	+	23	0
-	+	24	0
-	+	27	0
-	+	28	0
-	+	29	0
-	+	30	0
-	+	17	7
-	+	30	0
-	+	19	0
-	+	18	17
-	+	34	0
+> ~/Documents/Google Drive/laburo/opercat/deploy/scripts/20150806_notacreditoventa.sql
+	"	7	15
 
 > ~/.bashrc
 	"	1	0
 
-> ~/workspace/rorcat/.git/COMMIT_EDITMSG
-	"	1	6
-	^	1	7
-	.	1	6
-	+	1	6
+> ~/.bash_profile
+	"	35	0
+	^	35	0
+	.	35	42
+	+	26	0
+	+	26	0
+	+	26	0
+	+	26	0
+	+	38	0
+	+	34	34
+	+	35	42
 
-> ~/workspace/rorcat/NERD_tree_1
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/workspace/opercat/.git/COMMIT_EDITMSG
-	"	1	4
-	^	1	5
-	.	1	4
-	+	2	23
-	+	1	4
-	y	1	0
-
-> ~/workspace/opercat/NERD_tree_1
-	"	4	0
-	.	1	0
-	+	1	0
-
-> /private/etc/fstab
-	"	1	0
-
-> /private/etc/fstab.hd
-	"	1	0
-
-> ~/.ssh/known_hosts
-	"	14	0
-	.	15	0
-	+	15	0
-
-> ~/xinamon/ihouse/.git/COMMIT_EDITMSG
-	"	2	38
-	^	2	39
-	.	3	0
+> ~/workspace/omarzina/opercat_java/.git/COMMIT_EDITMSG
+	"	1	1
+	^	1	2
+	.	1	1
+	+	3	34
+	+	2	9
 	+	1	1
-	+	1	3
+
+> ~/workspace/omarzina/opercat_java/.gitignore
+	"	1	0
+	.	1	0
 	+	1	0
-	+	1	26
-	+	4	30
-	+	1	49
+	+	73	0
+	+	1	0
+	+	1	0
+
+> ~/workspace/omarzina/opercat_java/README.md
+	"	3	5
+	^	3	6
+	.	3	5
 	+	1	20
-	+	3	0
+	+	3	5
 
-> ~/xinamon/ihouse/NERD_tree_1
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/npm-debug.log
-	"	1	0
-	^	14	0
-	.	20	0
-	+	20	0
-	+	20	0
-
-> /private/var/folders/4_/903325qj43scvdkdbzbtnms40000gn/T/tutorpCuf1n
-	"	1	0
-	^	802	9
-	.	802	8
-	+	85	30
-	+	109	23
-	+	132	46
-	+	134	51
-	+	203	43
-	+	222	0
-	+	203	0
-	+	203	0
-	+	222	0
-	+	203	43
-	+	222	46
-	+	315	0
-	+	316	0
-	+	403	26
-	+	404	0
-	+	403	48
-	+	428	58
-	+	453	77
-	+	456	40
-	+	453	0
-	+	456	0
-	+	456	0
-	+	453	48
-	+	456	0
-	+	457	0
-	+	456	0
-	+	454	0
-	+	456	0
-	+	456	0
-	+	454	1
-	+	455	0
-	+	454	0
-	+	453	177
-	+	454	0
-	+	518	0
-	+	566	0
-	+	650	0
-	+	566	0
-	+	753	50
-	+	776	0
-	+	802	8
-
-> /usr/local/Cellar/vim/7.4.712/share/vim/vim74/doc/help.txt
-	"	37	2
-
-> /usr/local/Cellar/vim/7.4.712/share/vim/vim74/doc/quickref.txt
-	"	73	10
-
-> ~/vim_cheatsheet.txt
-	"	18	17
-	^	36	16
-	.	36	15
-	+	1	0
-	+	14	0
-	+	1	0
-	+	3	0
-	+	30	6
-	+	3	20
-	+	32	41
-	+	39	7
-	+	20	0
-	+	28	26
-	+	16	0
-	+	17	23
-	+	26	26
-	+	11	0
-	+	12	26
-	+	13	21
-	+	36	15
-
-> ~/xinamon/ihouse/app/controllers/budget_models_controller.rb
-	"	5	0
-
-> ~/.vim/bundle/vim-colors-solarized/doc/solarized.txt
-	"	73	19
-
-> ~/xinamon/ihouse/Gemfile
-	"	3	0
-	^	62	50
-	.	62	49
-	+	47	15
-	+	63	0
-	+	60	0
-	+	59	0
-	+	61	0
-	+	60	0
-	+	63	0
-	+	62	49
-
-> ~/xinamon/ihouse/app/controllers/budget_model_prices_controller.rb
-	"	3	0
-	.	2	0
-	+	2	0
-
-> ~/xinamon/ihouse/app/controllers/budget_model_details_controller.rb
-	"	43	25
-
-> ~/[Vundle] list
-	"	8	19
-	.	1	0
-	+	1	0
-
-> ~/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> /private/var/folders/4_/903325qj43scvdkdbzbtnms40000gn/T/tutor1WqR6x
-	"	1	0
-
-> ~/xinamon/ihouse/app/views/extra-blank-page.html
-	"	1	0
-
-> ~/xinamon/ihouse/db/seeds.rb
-	"	280	0
-	.	281	0
-	+	281	0
-	+	281	0
-	+	281	0
-	+	281	0
-	+	281	0
-	+	281	0
-	+	281	0
-	+	281	0
-	+	281	0
-	+	281	455
-	+	281	0
-	+	281	0
-	+	281	0
-	+	281	0
-	+	281	0
-	+	275	0
-	+	276	0
-	+	281	124
-	+	281	124
-	+	281	124
-	+	281	136
-	+	281	136
-	+	281	136
-	+	281	0
-	m	188	1
-
-> ~/xinamon/ihouse/ControlP
-	"	5	0
-	.	2	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	63	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	18	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	2	0
-
-> ~/xinamon/ihouse/app/models/budget.rb
-	"	6	16
-
-> ~/xinamon/ihouse/app/models/budget_state.rb
-	"	2	0
-
-> ~/xinamon/ihouse/app/models/model.rb
-	"	3	0
-
-> ~/xinamon/ihouse/app/models/budget_model.rb
-	"	1	0
-
-> /usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/Resources/vim/runtime/doc/windows.txt
-	"	168	27
-
-> ~/xinamon/ihouse/comados.txt
-	"	12	60
-
-> ~/xinamon/ihouse/NERD_tree_2
-	"	8	0
-	.	1	0
-	+	1	0
-
-> ~/xinamon/ihouse/config.ru
-	"	1	0
-
-> ~/xinamon/ihouse/public/422.html
-	"	1	0
-
-> ~/xinamon/ihouse/Gemfile.lock
-	"	1	0
-
-> ~/xinamon/ihouse/config/application.yml
-	"	2	0
-
-> ~/xinamon/ihouse/.gitignore
-	"	1	0
-	^	17	15
-	.	17	14
-	+	54	7
-	+	18	20
-	+	17	0
-	+	18	0
-	+	17	14
-
-> ~/xinamon/ihouse/public/reports/pdf_test
-	"	1	0
-
-> ~/xinamon/ihouse/app/controllers/budgets_controller.rb
-	"	1	0
-
-> ~/xinamon/ihouse/config/routes.rb
-	"	1	0
-
-> /private/var/folders/4_/903325qj43scvdkdbzbtnms40000gn/T/tutorRdIxX1
-	"	1	0
-	^	132	47
-	.	132	46
-	+	85	31
-	+	85	0
-	+	132	46
-
-> ~/xinamon/ihouse/app/helpers/application_helper.rb
-	"	30	16
-
-> ~/xinamon/ihouse/app/views/client_groups/new.html.erb
-	"	1	0
-
-> ~/xinamon/ihouse/app/views/client_groups/show.html.erb
-	"	2	0
-
-> ~/xinamon/ihouse/app/views/client_groups/index.html.erb
-	"	1	0
-
-> ~/caca
-	"	1	0
-	^	2	25
-	.	2	24
+> ~/workspace/omarzina/fopercat/.git/COMMIT_EDITMSG
+	"	1	3
+	^	1	4
+	.	1	3
 	+	1	3
-	+	1	26
-	+	1	0
-	+	1	0
-	+	1	110
-	+	2	24
 
-> ~/tmp.txt
-	"	1	0
-	^	1	15
-	.	1	14
-	+	1	14
+> ~/workspace/omarzina/fopercat/src/main/java/com/opercor/model/Cheque.java
+	"	38	18
 
-> ~/xinamon/ihouse/app/views/companies/index.html.erb
-	"	1	0
+> ~/workspace/omarzina/fopercat/src/main/java/org/fopercat/model/usuario.java
+	"	31	0
 
-> /private/var/folders/4_/903325qj43scvdkdbzbtnms40000gn/T/tutorRQ40RG
-	"	1	0
-	^	895	0
-	.	894	2
-	+	567	0
-	+	675	0
-	+	741	4
-	+	741	0
-	+	756	1
-	+	767	50
-	+	770	78
-	+	790	35
-	+	816	8
-	+	819	0
-	+	906	0
-	+	894	2
+> ~/workspace/omarzina/jopercat/.git/COMMIT_EDITMSG
+	"	1	10
+	^	1	11
+	.	1	10
+	+	1	10
 
-> ~/workspace/rorcat/config/routes.rb
-	"	1	0
-	^	8	18
-	.	8	17
-	+	8	17
-
-> ~/xinamon/ihouse/app/views/budget_models/_form.html.erb
-	"	20	0
-
-> ~/xinamon/ihouse/app/views/budget_models/index.html.erb
-	"	8	0
-
-> ~/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/csv.rb
-	"	214	2
-
-> ~/xinamon/ihouse/db/ihouse_dev
-	"	15	0
-
-> ~/xinamon/ihouse/app/views/client_groups/index.json.jbuilder
-	"	1	0
-
-> ~/xinamon/ihouse/app/controllers/client_groups_controller.rb
-	"	2	0
-	^	12	0
-	.	12	0
-	+	10	0
-	+	1	0
-	+	12	0
-	+	12	0
-
-> ~/xinamon/ihouse/app/views/clients/_form.html.erb
-	"	2	13
-
-> ~/xinamon/ihouse/app/models/client.rb
-	"	6	0
-
-> ~/ControlP
-	"	10	0
-	.	2	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	2	0
-
-> ~/NERD_tree_6
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/NERD_tree_7
-	"	6	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/coco
-	"	6	0
-	^	8	3
-	.	8	0
-	+	11	0
-	+	8	0
-
-> ~/workspace/rorcat/config/NERD_tree_1
-	"	80	4
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/workspace/rorcat/config/NERD_tree_2
-	"	3	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/.gvimrc
-	"	1	0
-	^	1	21
-	.	1	20
-	+	1	20
-
-> /usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/Resources/vim/runtime/syntax/colortest.vim
-	"	52	0
-
-> ~/option-window
-	"	46	0
-	.	917	0
-	+	917	0
-
-> /private/var/folders/4_/903325qj43scvdkdbzbtnms40000gn/T/tutorstd6Mn
-	"	534	0
-	.	968	0
-	+	43	0
-	+	85	31
-	+	132	46
-	+	134	41
-	+	137	42
-	+	203	15
-	+	222	46
-	+	245	16
-	+	294	29
-	+	305	0
-	+	320	0
-	+	294	0
-	+	339	15
-	+	389	0
-	+	387	0
-	+	387	0
-	+	385	0
-	+	387	0
-	+	385	0
-	+	387	0
-	+	388	0
-	+	385	0
-	+	388	0
-	+	386	0
-	+	406	59
-	+	431	54
-	+	456	71
-	+	457	0
-	+	472	0
-	+	472	0
-	+	472	0
-	+	472	0
-	+	457	0
-	+	968	0
-
-> ~/.vim/bundle/vim-rails/CONTRIBUTING.markdown
-	"	1	0
-
-> ~/.vim/bundle/ctrlp.vim/doc/ctrlp.txt
-	"	115	1
-
-> ~/.vim/ControlP
-	"	1	0
-	.	2	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	2	0
-
-> ~/NERD_tree_3
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/xinamon/ihouse/app/views/budget_models/index.json.jbuilder
-	"	1	0
-
-> ~/xinamon/ihouse/app/views/budget_models/show.html.erb
+> ~/workspace/omarzina/jopercat/.gitignore
 	"	12	0
-
-> ~/NERD_tree_4
-	"	15	0
-	.	1	0
+	^	12	0
+	.	11	7
+	+	60	6
+	+	62	7
+	+	58	0
+	+	15	9
+	+	1	9
 	+	1	0
-	+	1	0
+	+	3	9
+	+	3	15
+	+	3	10
+	+	3	10
+	+	11	7
 
-> ~/Documents/Google Drive/CLIENTES Y COBROS.gsheet
-	"	1	0
+> ~/workspace/omarzina/jopercat/opercat/pom.xml
+	"	59	33
+	^	59	34
+	.	59	33
+	+	28	0
+	+	58	33
+	+	59	33
 
-> ~/xinamon/ihouse/app/views/dashboard-2.html
-	"	10	0
+> ~/workspace/xinamon/ihouse/.git/COMMIT_EDITMSG
+	"	2	0
+	^	2	0
+	.	2	0
+	+	1	8
+	+	2	0
